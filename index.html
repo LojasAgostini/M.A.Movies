@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M.A. Movéis</title>
+    <style>
+          * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header .logo {
+            font-size: 24px;
+        }
+        header nav {
+            display: flex;
+        }
+        header nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        header .search-bar {
+            flex-grow: 1;
+            margin: 0 20px;
+        }
+        header .search-bar input {
+            width: 100%;
+            padding: 5px;
+        }
+        header .cart {
+            position: relative;
+        }
+        header .cart::after {
+            content: attr(data-items);
+            background: red;
+            color: white;
+            border-radius: 50%;
+            padding: 2px 6px;
+            position: absolute;
+            top: -10px;
+            right: -10px;
+        }
+        
+        .highlights {
+            padding: 20px 20px;
+            text-align: center;
+        }
+        .highlights h2 {
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+        .product-carousel {
+            display: flex;
+            overflow-x: auto;
+            align-items: center;
+        }
+        .product {
+            flex: 0 0 auto;
+            width: 200px;
+            height: 300px;
+            margin: 0 10px;
+            border: 3px solid black;
+            border-radius: 5px;
+            padding: 10px;
+            background: white;
+            text-align: center;
+        }
+        .product img {
+            width: 100%;
+            height: 190px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+        }
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: relative  ;
+            bottom: 0;
+            width: 100%;
+            
+        }
+        html, body {
+            height: 100%;
+        }
+
+        body {
+            display: grid;
+            grid-template-rows: auto 1fr auto;
+            height: 100%;
+        }
+        
+
+        main {
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Mostruario de móveis M.A.</div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="sobre.html">Sobre Nós</a>
+            <a href="contato.html">Contato</a>
+        </nav>
+        
+        
+    </header>
+    
+    
+    
+    <section class="highlights">
+        <h1>Encontre o Móvel Perfeito para Sua Casa</h1>
+        <h2>Nossos Destaques</h2>
+        <div class="product-carousel">
+           
+            <div class="product">
+                <img src="fotos para ss/1.png" alt="Produto 1">
+                <h3>CADEIRA GEORGIA</h3>
+                
+            </div>
+            <div class="product">
+                <img src="fotos para ss/2.png" alt="Produto 2">
+                <h3>CADEIRA SPARTA</h3>
+                
+            </div>
+            <div class="product">
+                <img src="fotos para ss/3.png" alt="Produto 3">
+                <h3>CADEIRA ROMA</h3>
+                
+            </div>
+            <div class="product">
+                <img src="fotos para ss/4.png" alt="Produto 1">
+                <h3>MESA CHICAGO</h3>
+                
+            </div>
+            <div class="product">
+                <img src="fotos para ss/5.png" alt="Produto 2">
+                <h3>MESA DE CENTRO CECILIA</h3>
+                
+            </div>
+            <div class="product">
+                <img src="fotos para ss/6.png" alt="Produto 3">
+                <h3>APARADOR BOSTON</h3>
+                
+            </div>
+
+            <div class="product">
+                <img src="fotos para ss/7.png" alt="Produto 1">
+                <h3>Cadeira ISIS</h3>
+                
+            </div>
+        </div>
+       
+
+
+        <BR>
+
+        <div class="product-carousel">
+            <div class="product">
+                <img src="fotos para ss/8.png" alt="Produto 1">
+                <h3>APARADOR VIENA</h3>
+                
+            </div>
+            <div class="product">
+                <img src="fotos para ss/9.png" alt="Produto 2">
+                <h3>CADEIRA LIZ</h3>
+                
+            </div>
+            <div class="product">
+                <img src="fotos para ss/10.png" alt="Produto 3">
+                <h3>Cadeira MADRID</h3>
+                
+            </div>
+            <div class="product">
+                <img src="fotos para ss/11.png" alt="Produto 1">
+                <h3>MESA DE CENTRO PALETA</h3>
+                
+            </div>
+            <div class="product">
+                <img src="fotos para ss/12.png" alt="Produto 2">
+                <h3>MESA LATERAL ATLANTA</h3>
+                
+            </div>
+            <div class="product">
+                <img src="fotos para ss/13.png" alt="Produto 3">
+                <h3>MESA MILA</h3>
+                
+            </div>
+
+            <div class="product">
+                <img src="fotos para ss/14.png" alt="Produto 3">
+                <h3>MESA LATERAL MONA</h3>
+                
+            </div>
+        </div>
+
+
+
+        <BR>
+
+            <div class="product-carousel">
+                <div class="product">
+                    <img src="fotos para ss/15.png" alt="Produto 1">
+                    <h3>MESA DE CENTRO CUBO</h3>
+                    
+                </div>
+                <div class="product">
+                    <img src="fotos para ss/16.png" alt="Produto 2">
+                    <h3>BANQUETA MONACO</h3>
+                    
+                </div>
+                <div class="product">
+                    <img src="fotos para ss/17.png" alt="Produto 3">
+                    <h3>CADEIRA GREGA</h3>
+                    
+                </div>
+                <div class="product">
+                    <img src="fotos para ss/18.png" alt="Produto 1">
+                    <h3>BANQUETA MONACO</h3>
+                    
+                </div>
+                <div class="product">
+                    <img src="fotos para ss/19.png" alt="Produto 2">
+                    <h3>MESA LATERAL PHOENIX</h3>
+                    
+                </div>
+                <div class="product">
+                    <img src="fotos para ss/20.png" alt="Produto 3">
+                    <h3>BANQUETA LION</h3>
+                    
+                </div>
+    
+                <div class="product">
+                    <img src="fotos para ss/21.png" alt="Produto 3">
+                    <h3>MESA LATERAL BOSTON</h3>
+                    
+                </div>
+            </div>
+
+
+            <BR>
+
+                <div class="product-carousel">
+                    <div class="product">
+                        <img src="fotos para ss/22.png" alt="Produto 1">
+                        <h3>CADEIRA BANCOCK</h3>
+                        
+                    </div>
+                    <div class="product">
+                        <img src="fotos para ss/23.png" alt="Produto 2">
+                        <h3>CADEIRA PANAMA</h3>
+                        
+                    </div>
+                    <div class="product">
+                        <img src="fotos para ss/40.png" alt="Produto 3">
+                        <h3>CADEIRA BERLIM</h3>
+                        
+                    </div>
+                    <div class="product">
+                        <img src="fotos para ss/25.png" alt="Produto 1">
+                        <h3>MESA DE CENTRO MALTA</h3>
+                        
+                    </div>
+                    <div class="product">
+                        <img src="fotos para ss/26.png" alt="Produto 2">
+                        <h3>MESA LATERAL ARGUS</h3>
+                        
+                    </div>
+                    <div class="product">
+                        <img src="fotos para ss/27.png" alt="Produto 3">
+                        <h3>MESA LATERAL DETROID</h3>
+                        
+                    </div>
+        
+                    <div class="product">
+                        <img src="fotos para ss/28.png" alt="Produto 3">
+                        <h3>MESA LATERAL VINTAGE</h3>
+                        
+                    </div>
+                </div>
+
+
+
+                <BR>
+
+                    <div class="product-carousel">
+                        <div class="product">
+                            <img src="fotos para ss/29.png" alt="Produto 1">
+                            <h3>MESA LATERAL LOUIS</h3>
+                            
+                        </div>
+                        <div class="product">
+                            <img src="fotos para ss/30.png" alt="Produto 2">
+                            <h3>CADEIRA ITALIA</h3>
+                            
+                        </div>
+                        <div class="product">
+                            <img src="fotos para ss/31.png" alt="Produto 3">
+                            <h3>MESA DE CENTRO VITORIA</h3>
+                            
+                        </div>
+                        <div class="product">
+                            <img src="fotos para ss/32.png" alt="Produto 1">
+                            <h3>CADEIRA VENEZA</h3>
+                            
+                        </div>
+                        <div class="product">
+                            <img src="fotos para ss/33.png" alt="Produto 2">
+                            <h3>BANQUETA LION</h3>
+                            
+                        </div>
+                        <div class="product">
+                            <img src="fotos para ss/34.png" alt="Produto 3">
+                            <h3>APARADOR TOQUIO</h3>
+                            
+                        </div>
+            
+                        <div class="product">
+                            <img src="fotos para ss/35.png" alt="Produto 3">
+                            <h3>MESA LATERAL COLORADO</h3>
+                            
+                        </div>
+                    </div>
+
+
+                    <BR>
+
+                        <div class="product-carousel">
+                            <div class="product">
+                                <img src="fotos para ss/36.png" alt="Produto 1">
+                                <h3>CADEIRA LIBIA</h3>
+                                
+                            </div>
+                            <div class="product">
+                                <img src="fotos para ss/37.png" alt="Produto 2">
+                                <h3>CADEIRA SIENA</h3>
+                                
+                            </div>
+                            <div class="product">
+                                <img src="fotos para ss/38.png" alt="Produto 3">
+                                <h3>CARRINHO DENVER</h3>
+                                
+                            </div>
+                            <div class="product">
+                                <img src="fotos para ss/39.png" alt="Produto 1">
+                                <h3>MESA PARIS</h3>
+                                
+                            </div>
+                        
+
+    </section>
+    
+    <footer>
+        <p>&copy; 2024 M.A.Móveis. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
